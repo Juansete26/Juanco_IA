@@ -8,7 +8,6 @@ MODELOS = ['llama3-8b-8192', 'llama3-70b-8192']
 
 # configuración de página  
 def Configurar_pagina():
-    st.set_page_config(page_title="JUANCO IA - La mejor en su rubro")
     st.title("Bienvenido a JUANCO-IA")
 
 # crear un cliente groq
@@ -46,7 +45,7 @@ def Mostrar_Sidebar():
     modelo = st.sidebar.selectbox('Elegí tu modelo', MODELOS, index=0)
     st.write(f'**Elegiste el modelo:** {modelo}')
     return modelo
-1
+
 #llamar modelo groq
 def Obtener_respuesta_modelo(Cliente, modelo, mensaje):
    Respuesta = Cliente.chat.completions.create(
