@@ -43,6 +43,7 @@ def mostrar_mensaje(role, content):
 def Mostrar_Sidebar():
     st.sidebar.title("Modelos de IA")
     modelo = st.sidebar.selectbox('Elegí tu modelo', MODELOS, index=0)
+    st.write("Creado por juan sobol")
     st.write(f'**Elegiste el modelo:** {modelo}')
     return modelo
 
