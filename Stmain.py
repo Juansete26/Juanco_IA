@@ -2,6 +2,8 @@
 import streamlit as st
 import groq as gr
 
+st.set_page_config(page_title="JUANCO IA - La mejor en su rubro")
+
 MODELOS = ['llama3-8b-8192', 'llama3-70b-8192']
 
 # configuración de página  
